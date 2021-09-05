@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+.banner-bg {
+  background-image: url(../../images/qa.png);
+  background-size: cover;
+  height: 304px;
+}
+
+.banner-title img {
+  width: 58px;
+  height: 58px;
+  padding-left: 10px;
+}
+
+.banner-title {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  font-size: 62px;
+  line-height: 80px;
+  max-width: 1200px;
+  height: 100%;
+  font-weight: 600;
+}
+
+.banner-title img {
+  position: relative;
+  bottom: 8px;
+}
+
+.qa-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.qa-content h2 {
+  font-size: 32px;
+  line-height: 63px;
+  font-weight: 500;
+  margin: 88px 0 16px 0;
+}
+
+.qa-list {
+  border: 1px solid #000000;
+  border-bottom: 0px;
+  margin-bottom: 156px;
+}
+
+.question {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  padding: 22px 38px;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  color: black;
+}
+
+// .question .arrow-down {
+//   display: none;
+// }
+
+.question::after{  content: url("../../images/ic_keyboard_arrow_up_24px.svg");
+}
+
+.question.active::after{
+  content: url("../../images/ic_keyboard_arrow_down_24px.svg");
+}
+
+.answer {
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #000000;
+  background-color: #f2f2f2;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.answer p {
+  padding: 22px 38px;
+}
+
+/* -----平板----- */
+@media (min-width: 376px) and (max-width: 768px) {
+  .qa-content {
+    width: 672px;
+  }
+
+  .banner-title {
+    font-size: 48px;
+    line-height: 48px;
+    width: 672px;
+  }
+  .banner-title h1 {
+    position: relative;
+    bottom: 15px;
+  }
+  .banner-title img {
+    width: 48px;
+  }
+
+  .qa-content h2 {
+    margin-top: 40px;
+  }
+
+  .qa-list {
+    margin-bottom: 104px;
+  }
+}
+
+/* -----手機----- */
+@media (max-width: 375px) {
+  .banner-bg {
+    height: 143px;
+    background-position: 40% 20%;
+    background-size: cover;
+  }
+  .qa-content {
+    width: 352px;
+  }
+
+  .banner-title {
+    font-size: 28px;
+    line-height: 28px;
+    width: 352px;
+  }
+  .banner-title h1 {
+    position: relative;
+    bottom: 10px;
+  }
+  .banner-title img {
+    width: 24px;
+    position: relative;
+    bottom: -5px;
+  }
+
+  .qa-content h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 24px;
+    font-weight: 600;
+  }
+
+  .qa-list {
+    margin-bottom: 56px;
+  }
+
+  .qa-content h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 16px;
+  }
+
+  .qa-content p {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px;
+  }
+
+  .qa {
+    height: 54px;
+  }
+}

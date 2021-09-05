@@ -1,0 +1,188 @@
+footer {
+  background: #aa0601;
+  padding-bottom: 28px;
+}
+
+.footer-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.footer-link {
+  padding-top: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link > ul {
+  margin-bottom: 38px;
+}
+
+.footer-link > ul > li {
+  padding-right: 48px;
+  align-self: center;
+}
+
+.social {
+  position: relative;
+  bottom: 13px;
+}
+
+.social img {
+  margin-left: 32px;
+  width: 48px;
+  height: 48px;
+}
+
+.contact-info {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 24px;
+}
+
+.infoitem {
+  font-size: 36px;
+  line-height: 54px;
+  padding-bottom: 22px;
+}
+
+.infoitem img {
+  width: 36px;
+  padding-right: 23px;
+}
+
+.otherinfo {
+  justify-content: space-between;
+}
+
+.otherinfo1 {
+  align-items: center;
+}
+
+.otherinfo img {
+  width: 80px;
+  height: 49px;
+  margin-right: 38px;
+}
+
+.otherinfo > ul {
+  align-items: center;
+}
+
+.otherinfo > ul > li {
+  margin-left: 62px;
+}
+
+/* -----平板----- */
+@media (min-width: 376px) and (max-width: 768px) {
+  .footer-container {
+    max-width: 672px;
+    margin: 0 auto;
+  }
+  .footer-link > ul {
+    margin-bottom: 26px;
+  }
+
+  .social img {
+    margin-left: 24px;
+    width: 24px;
+    vertical-align: top;
+  }
+
+  .infoitem img {
+    width: 23px;
+    padding-right: 12px;
+  }
+
+  .infoitem {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 9px;
+  }
+
+  .infoitem:nth-child(2) {
+    padding-bottom: 24px;
+  }
+
+  .otherinfo1 > img {
+    display: none;
+  }
+  .otherinfo1 > ul > li {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/* -----手機----- */
+@media (max-width: 375px) {
+  .footer-link {
+    padding-top: 24px;
+    position: relative;
+  }
+  .footer-link > ul {
+    display: none;
+  }
+  .social {
+    position: absolute;
+    right: 12px;
+    top:10px
+  }
+  .social img {
+    width: 24px;
+    margin-left: 24px;
+  }
+
+  .contact-info {
+    padding-bottom: 24px;
+    margin: 0 auto;
+    width: 351px;
+  }
+
+  .infoitem {
+    padding-bottom: 8px;
+    line-height: 20px;
+  }
+  .infoitem img {
+    width: 15px;
+    padding-right: 5px;
+  }
+
+  .infoitem p {
+    font-size: 16px;
+  }
+
+  .otherinfo {
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 351px;
+  }
+
+  .otherinfo img {
+    width: 46px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 12px;
+  }
+
+  footer {
+    padding-bottom: 0px;
+    height: 213px;
+  }
+
+  .otherinfo1 > p {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 16px; 
+  }
+  .otherinfo > ul{
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .otherinfo > ul > li {
+  margin-left: 0px;
+  font-size: 14px;
+}
+}

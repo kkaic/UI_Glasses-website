@@ -1,0 +1,160 @@
+.store-main {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  h3 {
+    display: inline-block;
+    padding: 22px 22px 38px 0;
+  }
+  select {
+    height: 25px;
+    width: 266px;
+    position: relative;
+    bottom: 3px;
+  }
+  .store-container {
+    flex-wrap: wrap;
+    margin-bottom: 154px;
+    .store {
+      width: 30%;
+      border: 1px solid #00000020;
+      margin-right: 24px;
+      margin-bottom: 24px;
+      .img-container {
+        border-bottom: 1px solid #00000020;
+        img {
+          width: 100%;
+        }
+        .store-name {
+          padding: 16px 24px;
+          font-weight: 600;
+        }
+      }
+      .store-info {
+        padding: 0 36px 16px;
+        img {
+          display: inline-block;
+          padding: 12px 10px 0 0;
+          width: 26px;
+          position: relative;
+          top: 3px;
+        }
+      }
+      a {
+        display: block;
+      }
+      a > p {
+        height: 68px;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    img {
+      width: 63%;
+    }
+  }
+  .page-store {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+    .banner-title img {
+    width: 30px;
+  }
+  .store-main {
+    width: 100%;
+    h3 {
+      padding-left: 48px;
+      font-weight: 600;
+    }
+    .store-container {
+      margin-left: 48px;
+      .store {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .banner-title img {
+    width: 17px;
+  }
+  .store-main {
+    width: 100%;
+    h3 {
+      font-size: 14px;
+      line-height: 30px;
+      padding: 16px 16px 0 16px;
+    }
+    select {
+      height: 30px;
+      width: 250px;
+      position: relative;
+      bottom: 3px;
+      display: inline-block;
+    }
+    .store-container {
+      margin-bottom: 40px;
+      margin-left: 12px;
+      .store {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 95%;
+        .img-container .store-name {
+          padding: 16px;
+        }
+        .store-info {
+          padding: 0 16px 16px 16px;
+          img {
+            width: 16px;
+            position: relative;
+            top: 4px;
+          }
+        }
+        p {
+          font-size: 14px;
+          line-height: 12px;
+        }
+        h3 {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        a > p {
+          height: 52px;
+        }
+      }
+    }
+
+    .page-store {
+      display: block;
+    ul {
+      justify-content: center;
+      margin-bottom: 56px;
+      li {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px 12px;
+        border: 1px solid #555555;
+      }
+      .border-single {
+        border-right: 0;
+      }
+      .now {
+        background-color: #000;
+        color: #fff;
+      }
+      .next {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+  }
+}
